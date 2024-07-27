@@ -62,12 +62,11 @@ footer {
 section {
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 100px;
+  padding: 0 80px;
 }
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
-  margin: 10px 0;
   grid-gap: 64px;
 }
 footer p {
