@@ -9,6 +9,10 @@ body {
 .text-center {
   text-align: center;
 }
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
 section {
   max-width: 100%;
   margin: 0 auto;
@@ -17,12 +21,15 @@ section {
 .secondary {
   background: #f8f8f8;
 }
-.grid {
-  display: grid;
-  grid-gap: 64px;
-}
+
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.grid-3-colums {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 header {
@@ -92,12 +99,14 @@ main h4 {
   font-size: 24px;
   line-height: 1.5;
   color: #272044;
+  margin: 0;
 }
 main h5 {
   font-weight: 700;
   font-size: 13px;
   line-height: 1.5;
   color: #272044;
+  margin: 0;
 }
 main p {
   font-weight: 400;
@@ -106,16 +115,18 @@ main p {
   color: #272044;
   opacity: 0.7;
 }
-.grid-3-columns-with-first-narrow {
-  grid-template-columns: 1fr 2fr 2fr;
-}
-.grid-3-colums {
-  grid-template-columns: 1fr 1fr 1fr;
-}
+
 .card {
   background: white;
   margin: 30px 0;
 }
+.card-body {
+  padding: 30px;
+}
+.card-footer {
+  padding: 0 30px 30px;
+}
+
 .btn {
   display: block;
   color: white;
@@ -177,6 +188,7 @@ footer a {
   }
   .image-responsive {
     max-width: 100%;
+    display: block;
   }
   .grid {
     grid-template-columns: 1fr;
