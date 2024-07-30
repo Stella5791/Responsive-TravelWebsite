@@ -71,6 +71,7 @@ section {
 .secondary {
   background: #f8f8f8;
 }
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
     url("/images/cordoba.jpg");
@@ -113,11 +114,9 @@ header a {
   margin-top: 32px;
 }
 
-main {
-  background-color: white;
-}
 main h2,
-.gallery h2 {
+.gallery h2,
+.map-section h2 {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
@@ -128,14 +127,16 @@ main h2,
   margin: 0;
 }
 main h3,
-.gallery h3 {
+.gallery h3,
+.map h3 {
   font-weight: 700;
   font-size: 40px;
   line-height: 1.5;
   color: #272044;
   margin: 0;
 }
-main h4 {
+main h4,
+map h4 {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.5;
@@ -159,8 +160,8 @@ main p {
 
 footer {
   background-image: linear-gradient(
-      rgba(39, 32, 68, 0.9),
-      rgba(39, 32, 68, 0.9)
+      rgba(39, 32, 68, 0.6),
+      rgba(39, 32, 68, 0.6)
     ),
     url("../images/cor-cañada.jpg");
   background-repeat: no-repeat;
